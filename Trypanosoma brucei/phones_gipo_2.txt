@@ -1,0 +1,37 @@
+
+ ****** Оценка базовой модели ******
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                  price   R-squared:                       0.207
+Model:                            OLS   Adj. R-squared:                  0.201
+Method:                 Least Squares   F-statistic:                     34.89
+Date:                Thu, 13 Jun 2024   Prob (F-statistic):           5.24e-55
+Time:                        00:20:03   Log-Likelihood:                -8352.4
+No. Observations:                1210   AIC:                         1.672e+04
+Df Residuals:                    1200   BIC:                         1.678e+04
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+===================================================================================
+                      coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------
+const             -25.4708    130.007     -0.196      0.845    -280.538     229.596
+bat_type_Li-Ion    69.0981     21.832      3.165      0.002      26.265     111.931
+vid4K_да         -472.6874    204.420     -2.312      0.021    -873.749     -71.626
+vid60_да          -46.1506     31.903     -1.447      0.148    -108.743      16.442
+size               62.8266     24.083      2.609      0.009      15.576     110.077
+battery            -0.0413      0.013     -3.173      0.002      -0.067      -0.016
+ram                 4.3720      3.950      1.107      0.269      -3.378      12.122
+storage             0.3056      0.177      1.724      0.085      -0.042       0.653
+vs                  0.7246      0.211      3.435      0.001       0.311       1.138
+4ks                85.9104     31.903      2.693      0.007      23.319     148.502
+==============================================================================
+Omnibus:                      698.388   Durbin-Watson:                   2.019
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             7065.671
+Skew:                           2.516   Prob(JB):                         0.00
+Kurtosis:                      13.715   Cond. No.                     1.41e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 1.41e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
